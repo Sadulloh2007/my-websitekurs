@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Актуальные курсов валют</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Актуальные курсы валют</h1>
+        <button id="theme-toggle" class="theme-toggle">
+            <div class="toggle-thumb"></div>
+        </button>
+    </header>
+
+    <div class="container">
+        <div class="currencies-grid">
+            <!-- USDT -->
+            <div class="currency-card">
+                <div class="currency-header">
+                    <div class="currency-icon">₮</div>
+                    <h2>Tether (USDT/RUB)</h2>
+                </div>
+                <div class="rate-container">
+                    <div class="rate-item">
+                        <span class="rate-label">Покупка</span>
+                        <span class="rate-value buy" id="usdt-buy">—</span>
+                    </div>
+                    <div class="rate-item">
+                        <span class="rate-label">Продажа</span>
+                        <span class="rate-value sell" id="usdt-sell">—</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- USD -->
+            <div class="currency-card">
+                <div class="currency-header">
+                    <div class="currency-icon">$</div>
+                    <h2>Доллар (USD/RUB)</h2>
+                </div>
+                <div class="rate-container">
+                    <div class="rate-item">
+                        <span class="rate-label">Покупка</span>
+                        <span class="rate-value buy" id="usd-buy">—</span>
+                    </div>
+                    <div class="rate-item">
+                        <span class="rate-label">Продажа</span>
+                        <span class="rate-value sell" id="usd-sell">—</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EUR -->
+            <div class="currency-card">
+                <div class="currency-header">
+                    <div class="currency-icon">€</div>
+                    <h2>Евро (EUR/RUB)</h2>
+                </div>
+                <div class="rate-container">
+                    <div class="rate-item">
+                        <span class="rate-label">Покупка</span>
+                        <span class="rate-value buy" id="eur-buy">—</span>
+                    </div>
+                    <div class="rate-item">
+                        <span class="rate-label">Продажа</span>
+                        <span class="rate-value sell" id="eur-sell">—</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="last-updated">
+            Обновлено: <span id="update-time">—</span>
+        </div>
+    </div>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
